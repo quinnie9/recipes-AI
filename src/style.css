@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff3c;
+    min-height: 100vh;
+    padding-top: 50px;
+    background: linear-gradient(135.8deg, rgb(26, 26, 29) 27.1%, rgb(111, 34, 50) 50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    min-height: 90vh;
+    background: rgba(255, 255, 255, 0.566);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+h1 {
+    font-size: 46px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.713);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-radius: 12px;
+    width: 50%;
+}
+
+h1, .textbox {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #dddddd00;
+    border-radius: 16px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.404);
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 2s; 
+}
+
+.material-symbols-outlined { /*taken from google icons*/
+    color: rgb(122, 99, 127);
+    font-size: 36px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    text-align: start;
+    outline: none !important;
+    font-size: 16px;
+    padding: 8px;
+    background: transparent;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 8px;
+}
+
+footer {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.698);
+    padding: 10px;
+    text-align: center;
+    font-family: "Space Mono", monospace;
+}
+
+a {
+    color: #8d88e6;
+}
+
+body.coctelDisplay .container {
+    background: rgba(255, 255, 255, 0.472)
+}  
+
+body.coctelDisplay h1 {
+        font-size: 26px;
+}
+
+body.coctelDisplay .textbox {
+    width: 100%;
+    flex-grow: 1; 
+    gap: 10px;
+    padding: 100px 150px 36px 150px;
+}
+
+body.coctelDisplay form {
+    width: 100%;
+    margin-top: auto;
+}
+
+body.coctelDisplay .coctel {
+    background-color: rgba(255, 255, 255, 0.393);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 50%;
+    margin-bottom: 20px;
+    line-height: 1.7;
+    text-align: justify;
+    color: #2f153f;
+  }
+
+.coctelStructure {
+    padding: 15px 15px 15px 30px;
+}
+  
+  body.coctelDisplay .ingredient { /*needs to be styled separately as I couldn't make the styling alongside the .poem */
+    background-color: rgba(255, 255, 255, 0.393);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    align-self: flex-start;
+    color: #2f153f;
+    
+  }
